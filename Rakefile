@@ -17,9 +17,9 @@ Jeweler::Tasks.new do |gem|
   gem.name = "locator"
   gem.homepage = "http://github.com/anildias/locator"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
-  gem.email = "anild@qburst.com"
+  gem.summary = %Q{Locate place with the help of Zip code API within a given distance by inputting zipcode}
+  gem.description = %Q{Locate place with the help of Zip code API within a given distance by inputting zipcode}
+  gem.email = "anildiasdavis@gmail.com"
   gem.authors = ["anildias"]
   # dependencies defined in Gemfile
 end
