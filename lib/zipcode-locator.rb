@@ -1,8 +1,8 @@
-require 'locator/unit'
+require 'zipcode-locator/unit'
 
 require 'httparty'
 
-class Locator
+class ZipcodeLocator
 	DEFAULT_UNIT = "km"
 	DEFAULT_FORMAT = "json"
 	AVAILABLE_UNITS = ["km", "mile", "radians", "degrees"]

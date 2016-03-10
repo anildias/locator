@@ -1,8 +1,8 @@
 require 'helper'
 
-class TestLocator < Minitest::Test
+class TestZipcodeLocator < Minitest::Test
 
-	@@loc = Locator.new('3YJBA4WF9vpMJWjnh0otcznhkPzlsuRwtB74F4KOz9Bj6VGnV4Q8EepY3Zkwtc2X')
+	@@loc = ZipcodeLocator.new('3YJBA4WF9vpMJWjnh0otcznhkPzlsuRwtB74F4KOz9Bj6VGnV4Q8EepY3Zkwtc2X')
 
 	def test_distance_between_zipcodes()
 		test_zipcode1 = 10001

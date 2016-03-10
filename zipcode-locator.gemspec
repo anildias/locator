@@ -5,7 +5,7 @@
 # stub: locator 0.1.1 ruby lib
 
 Gem::Specification.new do |s|
-  s.name = "locator"
+  s.name = "zipcode-locator"
   s.version = "0.1.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
@@ -26,11 +26,11 @@ Gem::Specification.new do |s|
     "README.rdoc",
     "Rakefile",
     "VERSION",
-    "lib/locator.rb",
-    "lib/locator/unit.rb",
-    "locator.gemspec",
+    "lib/zipcode-locator.rb",
+    "lib/zipcode-locator/unit.rb",
+    "zipcode-locator.gemspec",
     "test/helper.rb",
-    "test/test_locator.rb",
+    "test/test_zipcode-locator.rb",
     "test/vcr_cassettes/close_zipcodes.yml",
     "test/vcr_cassettes/distance_between_zipcodes.yml",
     "test/vcr_cassettes/get_zipcodes_by_radius.yml",
@@ -38,7 +38,7 @@ Gem::Specification.new do |s|
     "test/vcr_cassettes/zipcode_by_location.yml",
     "test/vcr_cassettes/zipcode_location_info.yml"
   ]
-  s.homepage = "http://github.com/anildias/locator"
+  s.homepage = "http://github.com/anildias/zip-locator"
   s.licenses = ["MIT"]
   s.rubygems_version = "2.4.3"
   s.summary = "Locate place with the help of Zip code API within a given distance by inputting zipcode"

@@ -1,4 +1,4 @@
-module Locator	
+module ZipcodeLocator	
 	module Unit
 		DEFAULT_UNIT = "km"
 		AVAILABLE_UNITS = ["km", "mile", "radians", "degrees"]
