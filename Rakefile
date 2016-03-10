@@ -14,8 +14,8 @@ require 'rake'
 require 'jeweler'
 Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://guides.rubygems.org/specification-reference/ for more options
-  gem.name = "zipcode-locator"
-  gem.homepage = "http://github.com/anildias/zipcode-locator"
+  gem.name = "zipcode_locator"
+  gem.homepage = "http://github.com/anildias/zipcode_locator"
   gem.license = "MIT"
   gem.summary = %Q{Locate place with the help of Zip code API within a given distance by inputting zipcode}
   gem.description = %Q{Locate place with the help of Zip code API within a given distance by inputting zipcode}
