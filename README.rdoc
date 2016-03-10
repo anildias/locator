@@ -1,6 +1,47 @@
 = zipcode_locator
 
-Description goes here.
+Locate place with the help of Zip code API within a given distance by inputting zipcode. 
+
+= Usage
+
+To use this gem, first you need to register your application at Zipcode API
+visit https://www.zipcodeapi.com/Register, give your application name and email, you will get an api key which can be used to communicate with zipcode apis.
+
+apikey = "xxxxxxxx"
+
+then, 
+
+gem install zipcode_locator
+
+@object = ZipcodeLocator.new(apikey)
+
+= Zipcode Locator methods
+
+== Zipcode Distance
+
+@object.distance_between_zipcodes(zipcode1, zipcode2)
+
+== Zipcodes By Radius
+
+@object.get_zipcodes_by_radius(zipcode, radius)
+
+== Find close Zipcodes
+
+@object.find_close_zipcodes(zipcodes_array, distance)
+
+== Zipcode to Location info
+
+@object.zipcode_location_info(zipcode)
+
+== Multi Zipcodes to Location info
+
+@object.multi_zipcodes_location_info(zipcode_array)
+
+== Location to Zipcodes
+
+@object.get_zipcodes_by_locations(city, state)
+
+
 
 == Contributing to zipcode_locator
  
