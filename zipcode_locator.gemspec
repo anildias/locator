@@ -28,6 +28,8 @@ Gem::Specification.new do |s|
     "VERSION",
     "lib/zipcode_locator.rb",
     "lib/zipcode_locator/unit.rb",
+    "lib/zipcode_locator/format.rb",
+    "lib/zipcode_locator/response.rb",
     "test/helper.rb",
     "test/test_zipcode_locator.rb",
     "test/vcr_cassettes/close_zipcodes.yml",

@@ -87,6 +87,7 @@ DEPENDENCIES
   bundler (~> 1.0)
   httparty
   jeweler (~> 2.0.1)
+  nokogiri
   rdoc (~> 3.12)
   shoulda
   simplecov

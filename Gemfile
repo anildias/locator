@@ -14,4 +14,5 @@ group :development do
   gem 'vcr'
   gem 'webmock'
   gem 'httparty'
+  gem 'nokogiri'
 end
