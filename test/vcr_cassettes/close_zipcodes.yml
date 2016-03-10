@@ -1,0 +1,155 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.zipcodeapi.com/rest/3YJBA4WF9vpMJWjnh0otcznhkPzlsuRwtB74F4KOz9Bj6VGnV4Q8EepY3Zkwtc2X/match-close.json/10001,10005/5/km
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 08 Mar 2016 11:34:06 GMT
+      Server:
+      - Apache/2.4.16 (Amazon) OpenSSL/1.0.1k-fips PHP/5.5.29
+      X-Powered-By:
+      - PHP/5.5.29
+      Content-Length:
+      - '2'
+      Content-Type:
+      - application/json
+    body:
+      encoding: UTF-8
+      string: "[]"
+    http_version: 
+  recorded_at: Tue, 08 Mar 2016 11:34:06 GMT
+- request:
+    method: get
+    uri: http://www.zipcodeapi.com/rest/3YJBA4WF9vpMJWjnh0otcznhkPzlsuRwtB74F4KOz9Bj6VGnV4Q8EepY3Zkwtc2X/match-close.json/10001,10005/5/km
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - www.zipcodeapi.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 08 Mar 2016 11:35:38 GMT
+      Server:
+      - Apache/2.4.16 (Amazon) OpenSSL/1.0.1k-fips PHP/5.5.29
+      X-Powered-By:
+      - PHP/5.5.29
+      Content-Length:
+      - '2'
+      Content-Type:
+      - application/json
+    body:
+      encoding: UTF-8
+      string: "[]"
+    http_version: 
+  recorded_at: Tue, 08 Mar 2016 11:35:39 GMT
+- request:
+    method: get
+    uri: http://www.zipcodeapi.com/rest/3YJBA4WF9vpMJWjnh0otcznhkPzlsuRwtB74F4KOz9Bj6VGnV4Q8EepY3Zkwtc2X/multi-info.json/10001,10005/km
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - www.zipcodeapi.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 08 Mar 2016 11:39:13 GMT
+      Server:
+      - Apache/2.4.16 (Amazon) OpenSSL/1.0.1k-fips PHP/5.5.29
+      X-Powered-By:
+      - PHP/5.5.29
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '300'
+      Content-Type:
+      - application/json
+    body:
+      encoding: UTF-8
+      string: '{"10001":{"zip_code":"10001","lat":40.75065,"lng":-73.996924,"city":"New
+        York","state":"NY","timezone":{"timezone_identifier":"America\/New_York","timezone_abbr":"EST","utc_offset_sec":-18000,"is_dst":"F"},"acceptable_city_names":[{"city":"Empire
+        State","state":"NY"},{"city":"G P O","state":"NY"},{"city":"Greeley Square","state":"NY"},{"city":"Macys
+        Finance","state":"NY"},{"city":"Manhattan","state":"NY"}]},"10005":{"zip_code":"10005","lat":40.706015,"lng":-74.008959,"city":"New
+        York","state":"NY","timezone":{"timezone_identifier":"America\/New_York","timezone_abbr":"EST","utc_offset_sec":-18000,"is_dst":"F"},"acceptable_city_names":[{"city":"Manhattan","state":"NY"},{"city":"Nyc","state":"NY"},{"city":"Wall
+        Street","state":"NY"}]}}'
+    http_version: 
+  recorded_at: Tue, 08 Mar 2016 11:39:14 GMT
+- request:
+    method: get
+    uri: http://www.zipcodeapi.com/rest/3YJBA4WF9vpMJWjnh0otcznhkPzlsuRwtB74F4KOz9Bj6VGnV4Q8EepY3Zkwtc2X/multi-info.json/10001,10005/km
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - www.zipcodeapi.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 08 Mar 2016 11:48:12 GMT
+      Server:
+      - Apache/2.4.16 (Amazon) OpenSSL/1.0.1k-fips PHP/5.5.29
+      X-Powered-By:
+      - PHP/5.5.29
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '300'
+      Content-Type:
+      - application/json
+    body:
+      encoding: UTF-8
+      string: '{"10001":{"zip_code":"10001","lat":40.75065,"lng":-73.996924,"city":"New
+        York","state":"NY","timezone":{"timezone_identifier":"America\/New_York","timezone_abbr":"EST","utc_offset_sec":-18000,"is_dst":"F"},"acceptable_city_names":[{"city":"Empire
+        State","state":"NY"},{"city":"G P O","state":"NY"},{"city":"Greeley Square","state":"NY"},{"city":"Macys
+        Finance","state":"NY"},{"city":"Manhattan","state":"NY"}]},"10005":{"zip_code":"10005","lat":40.706015,"lng":-74.008959,"city":"New
+        York","state":"NY","timezone":{"timezone_identifier":"America\/New_York","timezone_abbr":"EST","utc_offset_sec":-18000,"is_dst":"F"},"acceptable_city_names":[{"city":"Manhattan","state":"NY"},{"city":"Nyc","state":"NY"},{"city":"Wall
+        Street","state":"NY"}]}}'
+    http_version: 
+  recorded_at: Tue, 08 Mar 2016 11:48:12 GMT
+recorded_with: VCR 3.0.1

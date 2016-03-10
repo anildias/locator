@@ -1,0 +1,143 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.zipcodeapi.com/rest/3YJBA4WF9vpMJWjnh0otcznhkPzlsuRwtB74F4KOz9Bj6VGnV4Q8EepY3Zkwtc2X/distance.json/10001/10005/km
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 08 Mar 2016 09:33:03 GMT
+      Server:
+      - Apache/2.4.16 (Amazon) OpenSSL/1.0.1k-fips PHP/5.5.29
+      X-Powered-By:
+      - PHP/5.5.29
+      Content-Length:
+      - '18'
+      Content-Type:
+      - application/json
+    body:
+      encoding: UTF-8
+      string: '{"distance":5.066}'
+    http_version: 
+  recorded_at: Tue, 08 Mar 2016 09:33:03 GMT
+- request:
+    method: get
+    uri: http://www.zipcodeapi.com/rest/ZuORokoACfzl1QhEFyFDRlaoM1AneVQdpE5OYuoBJYWKOdotM47Eph2cjDzxyqLY/distance.json/10001/10005/km
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - www.zipcodeapi.com
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Date:
+      - Tue, 08 Mar 2016 09:33:07 GMT
+      Server:
+      - Apache/2.4.16 (Amazon) OpenSSL/1.0.1k-fips PHP/5.5.29
+      X-Powered-By:
+      - PHP/5.5.29
+      Content-Length:
+      - '51'
+      Content-Type:
+      - text/html; charset=UTF-8
+    body:
+      encoding: UTF-8
+      string: '{"error_code":401,"error_msg":"API key not found."}'
+    http_version: 
+  recorded_at: Tue, 08 Mar 2016 09:33:07 GMT
+- request:
+    method: get
+    uri: http://www.zipcodeapi.com/rest/3YJBA4WF9vpMJWjnh0otcznhkPzlsuRwtB74F4KOz9Bj6VGnV4Q8EepY3Zkwtc2X/distance.json/10001/10005/km
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - www.zipcodeapi.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 08 Mar 2016 09:35:47 GMT
+      Server:
+      - Apache/2.4.16 (Amazon) OpenSSL/1.0.1k-fips PHP/5.5.29
+      X-Powered-By:
+      - PHP/5.5.29
+      Content-Length:
+      - '18'
+      Content-Type:
+      - application/json
+    body:
+      encoding: UTF-8
+      string: '{"distance":5.066}'
+    http_version: 
+  recorded_at: Tue, 08 Mar 2016 09:35:47 GMT
+- request:
+    method: get
+    uri: http://www.zipcodeapi.com/rest/3YJBA4WF9vpMJWjnh0otcznhkPzlsuRwtB74F4KOz9Bj6VGnV4Q8EepY3Zkwtc2X/distance.json/test_zipcode1/test_zipcode2/km
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - www.zipcodeapi.com
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Date:
+      - Tue, 08 Mar 2016 11:28:05 GMT
+      Server:
+      - Apache/2.4.16 (Amazon) OpenSSL/1.0.1k-fips PHP/5.5.29
+      X-Powered-By:
+      - PHP/5.5.29
+      Content-Length:
+      - '49'
+      Connection:
+      - close
+      Content-Type:
+      - application/json
+    body:
+      encoding: UTF-8
+      string: '{"error_code":400,"error_msg":"Invalid request."}'
+    http_version: 
+  recorded_at: Tue, 08 Mar 2016 11:28:05 GMT
+recorded_with: VCR 3.0.1

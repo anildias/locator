@@ -1,0 +1,71 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.zipcodeapi.com/rest/3YJBA4WF9vpMJWjnh0otcznhkPzlsuRwtB74F4KOz9Bj6VGnV4Q8EepY3Zkwtc2X/city-zips.json/NewYork/NY
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 08 Mar 2016 11:56:01 GMT
+      Server:
+      - Apache/2.4.16 (Amazon) OpenSSL/1.0.1k-fips PHP/5.5.29
+      X-Powered-By:
+      - PHP/5.5.29
+      Content-Length:
+      - '16'
+      Content-Type:
+      - application/json
+    body:
+      encoding: UTF-8
+      string: '{"zip_codes":[]}'
+    http_version: 
+  recorded_at: Tue, 08 Mar 2016 11:56:02 GMT
+- request:
+    method: get
+    uri: http://www.zipcodeapi.com/rest/3YJBA4WF9vpMJWjnh0otcznhkPzlsuRwtB74F4KOz9Bj6VGnV4Q8EepY3Zkwtc2X/city-zips.json/NewYork/NY/km
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - www.zipcodeapi.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 08 Mar 2016 12:01:14 GMT
+      Server:
+      - Apache/2.4.16 (Amazon) OpenSSL/1.0.1k-fips PHP/5.5.29
+      X-Powered-By:
+      - PHP/5.5.29
+      Content-Length:
+      - '16'
+      Content-Type:
+      - application/json
+    body:
+      encoding: UTF-8
+      string: '{"zip_codes":[]}'
+    http_version: 
+  recorded_at: Tue, 08 Mar 2016 12:01:15 GMT
+recorded_with: VCR 3.0.1
