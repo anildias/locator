@@ -29,6 +29,7 @@ Gem::Specification.new do |s|
     "lib/zipcode_locator.rb",
     "lib/zipcode_locator/unit.rb",
     "lib/zipcode_locator/format.rb",
+    "lib/zipcode_locator/locator.rb",
     "lib/zipcode_locator/response.rb",
     "test/helper.rb",
     "test/test_zipcode_locator.rb",
