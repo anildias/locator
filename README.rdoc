@@ -12,8 +12,8 @@ apikey = "xxxxxxxx"
 then, 
 
   	$ gem install zipcode_locator
-
-	$ @object = ZipcodeLocator.new(apikey)
+  	
+  	$ @object = ZipcodeLocator.new(apikey)
 
 = Zipcode Locator methods
 
@@ -24,19 +24,22 @@ then,
 	unit can be any of these availble units  "km", "mile", "degree", and "radians"
 
 	format can be 'json', 'xml', and 'csv'
-
+	
+	
 	$ options = { :unit => "km", :format => "json" }
 
 == Zipcode Distance
-
+	
 	$ zipcode1 = 10001
+	
 	$ zipcode2 = 10005
-
-  	$ @object.distance_between_zipcodes(zipcode1, zipcode2, options)
+	
+	$ @object.distance_between_zipcodes(zipcode1, zipcode2, options)
 
 == Zipcodes By Radius
 
 	$ zipcode = 10001
+	
 	$ radius = 5
 
   	$ @object.get_zipcodes_by_radius(zipcode, radius, options)
@@ -46,8 +49,9 @@ then,
 	$ zipcodes = "10001, 10005"
 
 	or
-
+	
 	$ zipcodes = [10001, 10005]
+	
 	$ distance = 5
 
   	$ @object.find_close_zipcodes(zipcodes, distance, options)
