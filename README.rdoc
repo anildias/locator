@@ -22,8 +22,13 @@ then,
 zipcode_locator supports different units and reposnse formats, To get repsonse in particular format with a particulat unit, you can pass these as an optional parameter
 
 optional parameter includes unit and format for the request.
-unit can be any of these availble units  "km", "mile", "degree", and "radians"
-format can be 'json', 'xml', and 'csv'
+unit can be any of these availble units  
+
+== unit   : "km", "mile", "degree", and "radians"
+
+ and
+
+== format : 'json', 'xml', and 'csv'
 
  $ options = { :unit => "km", :format => "json" }
 == Zipcode Distance
