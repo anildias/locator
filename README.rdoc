@@ -32,10 +32,8 @@ then,
 
 		$ zipcode1 = 10001
 		
-	
 		$ zipcode2 = 10005
 		
-	
 		$ @object.distance_between_zipcodes(zipcode1, zipcode2, options)
 		
 
