@@ -46,7 +46,7 @@ class TestZipcodeLocator < Minitest::Test
 	def test_multi_zipcodes_location_info()	
 		test_zipcodes = "10001,10005"
 		VCR.use_cassette("multi_zipcodes_location_info", :record => :new_episodes) do
-			res = @@loc.multi_zipcodes_location_info([10001, 10005], 5)
+			res = @@loc.multi_zipcodes_location_info([10001, 10005])
 			response = Net::HTTP.get_response(URI("http://www.zipcodeapi.com/rest/3YJBA4WF9vpMJWjnh0otcznhkPzlsuRwtB74F4KOz9Bj6VGnV4Q8EepY3Zkwtc2X/multi-info.json/#{test_zipcodes}/km"))
 			assert_equal res, JSON.parse(response.body)
 		end

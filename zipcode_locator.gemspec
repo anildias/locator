@@ -12,7 +12,7 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
   s.authors = ["anildias"]
   s.date = "2016-03-10"
-  s.description = "Locate place with the help of Zip code API within a given distance by inputting zipcode"
+  s.description = "Get Zipcodes and Location info by using ZipCode APIS"
   s.email = "anildiasdavis@gmail.com"
   s.extra_rdoc_files = [
     "LICENSE.txt",
@@ -44,7 +44,7 @@ Gem::Specification.new do |s|
   s.homepage = "http://github.com/anildias/zipcode_locator"
   s.licenses = ["MIT"]
   s.rubygems_version = "2.4.3"
-  s.summary = "Locate place with the help of Zip code API within a given distance by inputting zipcode"
+  s.summary = "Get Zipcodes and Location info by using ZipCode APIS"
 
   if s.respond_to? :specification_version then
     s.specification_version = 4

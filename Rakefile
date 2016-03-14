@@ -17,7 +17,7 @@ Jeweler::Tasks.new do |gem|
   gem.name = "zipcode_locator"
   gem.homepage = "http://github.com/anildias/zipcode_locator"
   gem.license = "MIT"
-  gem.summary = %Q{Locate place with the help of Zip code API within a given distance by inputting zipcode}
+  gem.summary = %Q{Get Zipcodes and Location info by using ZipCode APISe}
   gem.description = %Q{Locate place with the help of Zip code API within a given distance by inputting zipcode}
   gem.email = "anildiasdavis@gmail.com"
   gem.authors = ["anildias"]

@@ -5,7 +5,7 @@ module Response
 
 	ERROR_JSON_RESPONSE = { status: 400, message: "error" }
 	ERROR_XML_RESPONSE = "<?xml version=\"1.0\"?>\n<response>\n  <status>400</status>\n<message>error</message>\n</response>\n"
-	ERROR_CSV_RESPONSE = "error"
+	ERROR_CSV_RESPONSE = "status,message\n400,error\n"
 
 	def self.json(url)
 		zipcode_response = HTTParty.get(url)
