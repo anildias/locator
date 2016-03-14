@@ -29,7 +29,7 @@ then,
 	$ options = { :unit => "km", :format => "json" }
 
 == Zipcode Distance
-	
+
 	$ zipcode1 = 10001
 	
 	$ zipcode2 = 10005
