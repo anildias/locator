@@ -26,56 +26,57 @@ then,
 	format can be 'json', 'xml', and 'csv'
 	
 	
-	$ options = { :unit => "km", :format => "json" }
+		$ options = { :unit => "km", :format => "json" }
 
 == Zipcode Distance
 
-	$ zipcode1 = 10001
+		$ zipcode1 = 10001
 	
-	$ zipcode2 = 10005
+		$ zipcode2 = 10005
 	
-	$ @object.distance_between_zipcodes(zipcode1, zipcode2, options)
+		$ @object.distance_between_zipcodes(zipcode1, zipcode2, options)
 
 == Zipcodes By Radius
 
-	$ zipcode = 10001
+		$ zipcode = 10001
 	
-	$ radius = 5
+		$ radius = 5
 
   	$ @object.get_zipcodes_by_radius(zipcode, radius, options)
 
 == Find close Zipcodes
 
-	$ zipcodes = "10001, 10005"
+		$ zipcodes = "10001, 10005"
 
 	or
 	
-	$ zipcodes = [10001, 10005]
+		$ zipcodes = [10001, 10005]
 	
-	$ distance = 5
+		$ distance = 5
 
   	$ @object.find_close_zipcodes(zipcodes, distance, options)
 
 == Zipcode to Location info
 
-	$ zipcode = 10005
+		$ zipcode = 10005
 
   	$ @object.zipcode_location_info(zipcode, options)
 
 == Multi Zipcodes to Location info
 
-	$ zipcodes = "10001, 10005"
+		$ zipcodes = "10001, 10005"
 
 	or
 
-	$ zipcodes = [10001, 10005]
+		$ zipcodes = [10001, 10005]
 
   	$ @object.multi_zipcodes_location_info(zipcodes, options)
 
 == Location to Zipcodes
 
-	$ city = "Brooklyn"
-	$ state = "NY"
+		$ city = "Brooklyn"
+		
+		$ state = "NY"
 
   	$ @object.get_zipcodes_by_locations(city, state, options)
 
