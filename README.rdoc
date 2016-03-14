@@ -2,7 +2,7 @@
 
 Get Zipcodes and Location info by using ZipCode APIS.
 
-[![Gem Version](https://badge.fury.io/rb/zipcode_locator.svg)](https://badge.fury.io/rb/zipcode_locator)
+{<img src="https://badge.fury.io/rb/zipcode_locator.svg" alt="Gem Version" />}[https://badge.fury.io/rb/zipcode_locator]
 
 = Usage
 
