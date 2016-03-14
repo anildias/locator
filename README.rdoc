@@ -1,8 +1,6 @@
-= zipcode_locator
+= zipcode_locator {<img src="https://badge.fury.io/rb/zipcode_locator.svg" alt="Gem Version" />}[https://badge.fury.io/rb/zipcode_locator] {<img src="https://travis-ci.org/anildias/zipcode_locator.svg?branch=master" alt="Build Status" />}[https://travis-ci.org/anildias/zipcode_locator]  
 
 Get Zipcodes and Location info by using ZipCode APIS.
-
-{<img src="https://badge.fury.io/rb/zipcode_locator.svg" alt="Gem Version" />}[https://badge.fury.io/rb/zipcode_locator]
 
 = Usage
 
@@ -24,11 +22,11 @@ zipcode_locator supports different units and reposnse formats, To get repsonse i
 optional parameter includes unit and format for the request.
 unit can be any of these availble units  
 
-== unit   : "km", "mile", "degree", and "radians"
+ unit   : 'km', 'mile', 'degree', and 'radians'
 
  and
 
-== format : 'json', 'xml', and 'csv'
+ format : 'json', 'xml', and 'csv'
 
  $ options = { :unit => "km", :format => "json" }
 == Zipcode Distance
