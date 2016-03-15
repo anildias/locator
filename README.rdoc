@@ -13,6 +13,8 @@ then,
  
  $ gem install zipcode_locator
  
+initialize zipcode_locator object with this apikey
+ 
  $ @object = ZipcodeLocator.new(apikey)
  
 = Zipcode Locator methods
