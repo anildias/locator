@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>ZipcodeLocator by anildias</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">ZipcodeLocator</h1>
+      <h2 class="project-tagline">Using Zipcode Api to get zipcodes and location</h2>
+      <a href="https://github.com/anildias/zipcode_locator" class="btn">View on GitHub</a>
+      <a href="https://github.com/anildias/zipcode_locator/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/anildias/zipcode_locator/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="zipcode_locator" class="anchor" href="#zipcode_locator" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>zipcode_locator</h1>
+
+<h3>
+<a id="get-zipcodes-and-location-info-by-using-zipcode-apis" class="anchor" href="#get-zipcodes-and-location-info-by-using-zipcode-apis" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Get Zipcodes and Location info by using ZipCode APIs.</h3>
+
+<h2>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usage</h2>
+
+<pre><code>To use this gem, first you need to register your application at Zipcode API.
+</code></pre>
+
+<p>visit <a href="https://www.zipcodeapi.com/Register">zipcodeapi registration</a>, give your application name and email, then obtain an apikey which can be used to communicate with zipcode apis.</p>
+
+<pre><code>apikey = "xxxxxxxx"
+</code></pre>
+
+<p>then,</p>
+
+<pre><code>gem install zipcode_locator
+</code></pre>
+
+<p>initialize zipcode_locator object with this apikey</p>
+
+<pre><code>@object = ZipcodeLocator.new(apikey)
+</code></pre>
+
+<h2>
+<a id="zipcode-locator-methods" class="anchor" href="#zipcode-locator-methods" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Zipcode Locator methods</h2>
+
+<pre><code>zipcode_locator supports different units and reposnse formats, To get repsonse in particular format with a particulat unit, you can pass these as an optional parameter.
+
+optional parameter includes unit and format for the request.
+
+unit can be any of these availble units
+    unit   : 'km', 'mile', 'degree', and 'radians'
+and
+    format : 'json', 'xml', and 'csv'
+
+options = { :unit =&gt; "km", :format =&gt; "json" }
+</code></pre>
+
+<h3>
+<a id="zipcode-distance" class="anchor" href="#zipcode-distance" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Zipcode Distance</h3>
+
+<pre><code>zipcode1 = 10001
+zipcode2 = 10005
+
+@object.distance_between_zipcodes(zipcode1, zipcode2, options)
+</code></pre>
+
+<h3>
+<a id="zipcodes-by-radius" class="anchor" href="#zipcodes-by-radius" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Zipcodes By Radius</h3>
+
+<pre><code>zipcode = 10001
+radius = 5
+
+@object.get_zipcodes_by_radius(zipcode, radius, options)
+</code></pre>
+
+<h3>
+<a id="find-close-zipcodes" class="anchor" href="#find-close-zipcodes" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Find close Zipcodes</h3>
+
+<pre><code>zipcodes = "10001, 10005"
+</code></pre>
+
+<p>or
+    zipcodes = [10001, 10005]
+    distance = 5</p>
+
+<pre><code>@object.find_close_zipcodes(zipcodes, distance, options)
+</code></pre>
+
+<h3>
+<a id="zipcode-to-location-info" class="anchor" href="#zipcode-to-location-info" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Zipcode to Location info</h3>
+
+<pre><code>zipcode = 10005
+
+@object.zipcode_location_info(zipcode, options)
+</code></pre>
+
+<h3>
+<a id="multi-zipcodes-to-location-info" class="anchor" href="#multi-zipcodes-to-location-info" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Multi Zipcodes to Location info</h3>
+
+<pre><code>zipcodes = "10001, 10005"
+</code></pre>
+
+<p>or
+    zipcodes = [10001, 10005]</p>
+
+<pre><code>@object.multi_zipcodes_location_info(zipcodes, options)
+</code></pre>
+
+<h3>
+<a id="location-to-zipcodes" class="anchor" href="#location-to-zipcodes" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Location to Zipcodes</h3>
+
+<pre><code>city = "Brooklyn"
+state = "NY"
+
+@object.get_zipcodes_by_locations(city, state, options)
+</code></pre>
+
+<h2>
+<a id="run-tests" class="anchor" href="#run-tests" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Run Tests</h2>
+
+<pre><code>rake test
+</code></pre>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/anildias/zipcode_locator">ZipcodeLocator</a> is maintained by <a href="https://github.com/anildias">anildias</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
